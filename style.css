@@ -1,0 +1,235 @@
+:root {
+    --primary-blue: #2563eb;
+    --dark-blue: #1a3a8a;
+    --bg-gray: #f0f2f5;
+    --white: #ffffff;
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", Helvetica, sans-serif;
+    background-color: var(--bg-gray);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden; 
+}
+
+.navbar {
+    width: 100%;
+    background: linear-gradient(90deg, #1e3b8d, #245ddd);
+    padding: 12px 20px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap; 
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: var(--primary-blue);
+    background: var(--white);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #e2e8f0;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px; 
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.card-large {
+    max-width: 100%;
+    text-align: left; 
+    width: 95%; 
+}
+
+.title {
+    font-weight: 800;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+    font-size: 24px;
+    border-left: 5px solid var(--primary-blue);
+    padding-left: 15px;
+}
+
+.welcome-text {
+    color: #666;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dce1ea;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    width: auto;
+    min-width: 120px;
+    padding: 12px 24px;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1a44b3;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden; 
+}
+
+.data-table thead {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.data-table th {
+    padding: 18px 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.data-table td {
+    padding: 15px 20px;
+    vertical-align: middle;
+    background-color: transparent;
+    text-align: center;
+}
+.data-table th {
+    text-align: center;
+}
+
+.data-table tbody tr:nth-child(even) td {
+    background-color: #f8faff;
+}
+
+.data-table td img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.data-table th:nth-child(1),
+.data-table td:nth-child(1) {
+    width: 80px;
+}
+
+.data-table th:nth-child(2),
+.data-table td:nth-child(2) {
+    width: 30%; 
+}
+
+.data-table th:nth-child(3),
+.data-table td:nth-child(3) {
+    width: 15%;
+}
+
+.data-table th:nth-child(4),
+.data-table td:nth-child(4) {
+    width: 10%;
+}
+
+.data-table th:nth-child(5),
+.data-table td:nth-child(5) {
+    width: 40%;
+}
+
+.action-btns {
+    display: inline-flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.btn-sm {
+    padding: 8px 14px;
+    font-size: 12px;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-edit {
+    background: #646464;
+}
+.btn-delete {
+    background: #e73648;
+}
+.btn-print {
+    background: #56beff;
+}
+
+.login-page .main-container {
+    height: calc(100vh - 0px);
+    align-items: center;
+    padding: 0;
+}
+
+.login-page .card {
+    max-width: 380px;
+}
+
+.login-page .title {
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+
+.btn-logout{
+    margin-left:auto
+}
+
+.btn-print{
+    background-color: #1e3b8d;
+}

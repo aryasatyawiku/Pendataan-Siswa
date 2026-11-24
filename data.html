@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Siswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="dashboard.html" class="nav-btn">Dashboard</a>
+        <a href="data.html" class="nav-btn">Data Siswa</a>
+        <a href="input.html" class="nav-btn">Input Data</a>
+        <button class="nav-btn btn-logout" onclick="logout()">Logout</button>
+    </nav>
+
+    <div class="main-container">
+        <div id="halamanData" class="card card-large">
+            <h2 class="title">Data Siswa Terdaftar</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Nama</th>
+                        <th>Kelas</th>
+                        <th>Umur</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelData">
+                    <tr>
+                        <td><img src="https://via.placeholder.com/55" alt="siswa"></td>
+                        <td>DIan Siswanto</td>
+                        <td>XI RPL A</td>
+                        <td>20</td>
+                        <td>
+                            <div class="action-btns">
+                                <button class="btn-sm btn-edit">Edit</button>
+                                <button class="btn-sm btn-print">Cetak</button>
+                                <button class="btn-sm btn-delete">Hapus</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a href="dashboard.html" style="text-decoration: none; color: rgb(0, 0, 0);">⬅ Kembali ke Dashboard</a>
+        </div>
+
+        <div id="halamanEdit" class="card" style="display:none;">
+            <h2 class="title">Edit Data</h2>
+            <input type="hidden" id="indexEdit">
+            <div class="form-group">
+                <input type="text" id="editNama" class="input-field" placeholder="Nama">
+                <input type="number" id="editUmur" class="input-field" placeholder="Umur">
+                <input type="text" id="editKelas" class="input-field" placeholder="Kelas">
+                <input type="file" id="editFoto" class="input-field">
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn-primary" onclick="simpanEdit()">Simpan</button>
+                    <button class="btn-sm" style="background:#666" onclick="batalEdit()">Batal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

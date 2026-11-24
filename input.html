@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Data Siswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="dashboard.html" class="nav-btn">Dashboard</a>
+        <a href="data.html" class="nav-btn">Data Siswa</a>
+        <a href="input.html" class="nav-btn">Input Data</a>
+        <button class="nav-btn btn-logout" onclick="logout()">Logout</button>
+    </nav>
+
+    <div class="main-container">
+        <div class="card">
+            <h2 class="title">Input Data Siswa</h2>
+            <div class="form-group">
+                <div style="text-align: left;">
+                    <label>Nama Siswa</label>
+                    <input type="text" id="nama" class="input-field">
+                </div>
+                <div style="text-align: left;">
+                    <label>Umur</label>
+                    <input type="number" id="umur" class="input-field">
+                </div>
+                <div style="text-align: left;">
+                    <label>Kelas</label>
+                    <input type="text" id="kelas" class="input-field">
+                </div>
+                <div style="text-align: left;">
+                    <label>Foto</label>
+                    <input type="file" id="foto" class="input-field">
+                </div>
+                <button class="btn-primary" onclick="simpanData()">Simpan Data</button>
+            </div>
+            <br>
+            <a href="dashboard.html" style="text-decoration: none; color: #666; font-size: 14px;">⬅ Kembali</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
